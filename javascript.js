@@ -1,2 +1,2 @@
 alert('Hello!')
-confirm('CONFIRMATION','Yes or no')
+confirm('Yes or no')
