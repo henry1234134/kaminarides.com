@@ -1,6 +1,5 @@
 
 answer = confirm('Would you like to enter?')
-alert(answer)
 if(answer == true){
     alert('Welcome!')
 } else {
