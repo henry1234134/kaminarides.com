@@ -29,6 +29,7 @@
 </svg>
 <audio src="ambient_lounge.mp3" controls loop></audio>
 
+<main> <!-- Main Content of HTML-->
 
 <section> <!-- Thematic Grouping (Theme), Accessibility (Screen Readers), SEO (better understand the content of the page), Maintainability(More readable and easier to maintain)-->
     <h1 class="main heading">Be a Subject Matter Expert, Produce a Product, Make it Art</h1> <!-- Hierarchy and Structure (different levels of importance), SEO, Accessibility, Styling -->
@@ -36,6 +37,9 @@
     <h2 id="sub-heading">Customer focused</h2> <!-- ID attributes are unique identifiers so that they can be referenced in JavaScript and CSS, they are to be only referenced once -->
     <figure> <!-- self contained content (e.g. images, diagrams, illustrations, code snippets, videos), Accessibility (allows for screen readers to understand the content), SEO (better understand and index), Content Organisation -->
         <a href="https://www.google.co.uk" target="_blank"><img src="https://www.google.com/favicon.ico" alt="Googles Fav Icon"></a> <!-- A stands for anchor, moves the anchor to a different location -->
+        
+        <!-- Links can be styled in CSS by LVHA. :Link (default) :visited (clicked on) :hover :active (being clicked) :focus (tabbed onto)-->
+        
         <figcaption>This is <strong>Googles</strong> <em>favicon</em></figcaption>
     </figure>
     <p>View page source to understand the code!</p> <!-- P tags (Paragraph tags) are normally used for standard text-->
@@ -53,7 +57,7 @@
         
     <p>Where is the right place? What is right at this current time? Have you got the right mindset? Found the right mentor?</p>
 </section>
-
+</main>
 <iframe src="https://www.youtube.com/embed/UF8uR6Z6KLc"></iframe> <!-- iframe, then just add /embed/ to the start of vid id-->
 
 <script src="javascript.js"></script> <!-- Used to embed code. Best practice/Seperation of concerns is to use an external JS file -->
