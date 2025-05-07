@@ -1,0 +1,50 @@
+div{
+    display: flex;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    width:100vw;
+    opacity: 80%;
+    top: 0;
+    left: 0;
+    flex:0;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.sidebar{
+    left: 0;
+    top: 0;
+    height: 90vh;
+    width: 10vw;
+    opacity: 80%;
+    transition: width 0.3s ease-in;
+
+}
+
+.sidebar:hover{
+    width: 20vw;
+    
+}
+
+.sidebar:hover ~ main {
+    filter: blur(3px)
+}
+
+
+main{
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    opacity: 0.9;
+    flex: 111;
+}

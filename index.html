@@ -1,71 +1,32 @@
-<!DOCTYPE HTML> <!-- '!' is used to tell the system that this is a document declaration. This is used to specify the document type, without it, browsers may render the page in quirks mode, which can lead to inconsistent and unpredictable display -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Recall</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html lang="en"> <!-- Useful for Accessibility (e.g. Screen Readers), SEO Useful for search engines, browser-->
+        <link rel="icon" href="https://www.google.com/favicon.ico">
+        <link rel="stylesheet" href="style_scheme.css">
+    </head>
+    <body>
+        <nav>
+            <p>Kaminarides</p>
+        </nav>
+        <div class="row">
+            <div class="sidebar">
+                <p>what the sigma</p>
+            </div>
+            <main>
+                <p>main body</p>
+                <p> This is the main text area, this is where I can write my main content of the webpage.</p>
+                <p> If i could really be bothered to write something meaningful here I would, but I cba. </p>
+            </main>
+        </div>
 
-<head> <!-- Metadata, SEO, Browser Behaviour, Accessibility-->
+       
+    </body>
 
-    <title>Kaminarides</title>
-    <link rel="icon" href="https://www.google.com/favicon.ico"> <!-- Link element is the bridge between HTML and external resources. e.g. Favicon 'icon' .ico stands for icon, CSS 'stylesheet' and 'alternate' e.g. RSS feed -->
-    <meta charset="utf-8"> <!-- Browser compatibility, prevents encoding issues -->
+    <footer>
 
-    <meta name="description" content="This is what Google sees!"> 
-    <!-- 'name' attribute is for general metadata, widely used by search engines. Webpage summary, important for SEO and user engagement-->
-    <!-- 'property' attribute is specifically for Open Graph meta data, is a protocol developed by Facebook primarily used by social media platforms, SEO benefits! -->
-    <!-- Can test with Facebook sharing debugger https://developers.facebook.com/tools/debug/-->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="HTML Fundamentals">
-    <meta property="og:description" content="Greatest website of all time!">
-    <meta property="og:url" content="https://www.kaminarides.com/">
-    <meta property="og:image" content="https://kaminarides.com/OG_HD.jpeg">   <!-- needs to be minimum of 200x200 and a file size of less than 5MB-->
-</head>
-
-<body> <!-- Content Display, User Interaction, Structure and Layout-->
-
-<!-- webp or avif is better for IMAGES!! WebP is better for compatibility and AVIF is better for compression and quality-->
-<!-- Pixabay and Unsplash offer free to use images-->
-<!-- SVG (Scalable Vector Graphics) images are vector images which are in XML, they do not lose quality when upscaling! Good for Icons and Logos, 'Font Awesome' is a good library-->
-<svg width="1920" height="10">
-    <rect width="1920" height="10" fill="black">
-</svg>
-<audio src="ambient_lounge.mp3" controls loop></audio>
-<nav></nav> <!-- To contain navigation links, this is semantic HTML, Semantic HTML focuses on content structure, while presentational HTML focuses on appearance.-->
-<main> <!-- Main Content of HTML-->
-
-<section> <!-- Thematic Grouping (Theme), Accessibility (Screen Readers), SEO (better understand the content of the page), Maintainability(More readable and easier to maintain)-->
-    <h1 class="main heading">Be a Subject Matter Expert, Produce a Product, Make it Art</h1> <!-- Hierarchy and Structure (different levels of importance), SEO, Accessibility, Styling -->
-    <!-- classes are to be used when applying a set of styles to many elements, classes allow spaces in name -->
-    <h2 id="sub-heading">Customer focused</h2> <!-- ID attributes are unique identifiers so that they can be referenced in JavaScript and CSS, they are to be only referenced once -->
-    <figure> <!-- self contained content (e.g. images, diagrams, illustrations, code snippets, videos), Accessibility (allows for screen readers to understand the content), SEO (better understand and index), Content Organisation -->
-        <a href="https://www.google.co.uk" target="_blank"><img src="https://www.google.com/favicon.ico" alt="Googles Fav Icon"></a> <!-- A stands for anchor, moves the anchor to a different location -->
-        
-        <!-- Links can be styled in CSS by LVHA. :Link (default) :visited (clicked on) :hover :active (being clicked) :focus (tabbed onto)-->
-        
-        <figcaption>This is <strong>Googles</strong> <em>favicon</em></figcaption>
-    </figure>
-    <p>View page source to understand the code!</p> <!-- P tags (Paragraph tags) are normally used for standard text-->
-    
-</section> <!-- Section elements has semantic meaning, div containers does not-->
-
-<section>
-    <p>Notes from start of Steve Jobs Biography</p>
-        <ul>
-            <li><p>Right place</p></li>
-            <li><p>Right time</p></li>
-            <li><p>Right mindset</p></li>
-            <li><p>Right mentor</p></li>
-        </ul>
-        
-    <p>Where is the right place? What is right at this current time? Have you got the right mindset? Found the right mentor?</p>
-</section>
-</main>
-<iframe src="https://www.youtube.com/embed/UF8uR6Z6KLc"></iframe> <!-- iframe, then just add /embed/ to the start of vid id-->
-
-<script src="javascript.js"></script> <!-- Used to embed code. Best practice/Seperation of concerns is to use an external JS file -->
-
-</body>
-<footer> <!-- Authorship information, Copyright information, Contact information, Navigation links, Consistency between pages -->
-    <p>Author: <em>Henry Kaminarides</em></p> <!-- i indicates that the text differs from the surrounding content, while em emphasizes important text.-->
-    <p>Copyright: &#169;</p> <!-- Named character reference for copyright symbol,  Named &LT;/img&gt; Decimal &#60;/img&#62; Hexadecimal &#x3c;/img&#x3E;-->
-</footer>
-
+    </footer>
 </html>
