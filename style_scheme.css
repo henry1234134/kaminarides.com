@@ -34,17 +34,14 @@ nav {
 
 .sidebar:hover{ /* Good for PC but not good for mobile */
     width: 20vw;
-    background: linear-gradient(to left, white 40%, rgb(107, 89, 71, 0.1) 99%);
+    /*background: linear-gradient(to top, white 40%, rgb(107, 89, 71, 0.1) 99%);*/
+
     
 }
 
 .sidebar:active{ /* Better for mobile, no need to long hold */
     width: 20vw;
 
-}
-
-.sidebar:focus-within{
-    width: 20vw;
 }
 
 .sidebar:hover ~ main {
