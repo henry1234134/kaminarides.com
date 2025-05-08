@@ -16,6 +16,8 @@ nav {
     top: 0;
     left: 0;
     flex:0;
+    display: flex;
+    flex-direction: row;
 }
 
 .row{
@@ -29,6 +31,9 @@ nav {
     width: 10vw;
     opacity: 0.8;
     transition: width 0.3s ease-in;
+    flex-direction: column; /*ensures text goes downwards*/
+    align-items: left;
+    /*background-color: aqua;*/
 
 }
 
@@ -55,6 +60,8 @@ nav {
 
 main{
     background-color: rgb(255, 255, 255);
+    /*background-color: pink;*/
+
     width: 90vw;
     opacity: 0.9;
     flex: 111;
