@@ -32,12 +32,12 @@ nav {
 
 }
 
-.sidebar:hover{
+.sidebar:hover{ /* Good for PC but not good for mobile */
     width: 20vw;
     
 }
 
-.sidebar:focus{
+.sidebar:active{ /* Better for mobile, no need to long hold */
     width: 20vw;
 
 }
