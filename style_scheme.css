@@ -28,35 +28,42 @@ nav {
     left: 0;
     top: 0;
     height: 90vh;
-    width: 10vw;
+    width: 7vw;
+    transition: width 0.3s ease-in-out;
     opacity: 0.8;
-    transition: width 0.3s ease-in;
+    
     flex-direction: column; /*ensures text goes downwards*/
     align-items: left;
+
     /*background-color: aqua;*/
 
 }
 
 .sidebar:hover{ /* Good for PC but not good for mobile */
-    width: 20vw;
+    width: 15vw;
+    
     /*background: linear-gradient(to top, white 40%, rgb(107, 89, 71, 0.1) 99%);*/
-
     
 }
 
 .sidebar:active{ /* Better for mobile, no need to long hold */
-    width: 20vw;
+    width: 15vw;
 
 }
 
 .sidebar:hover ~ main {
-    filter: blur(3px) grayscale(100%) brightness(104%);
+    filter: blur(5px) grayscale(100%) brightness(104%);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.sidebar:hover ~ nav {
-    filter: blur(3px);
+.sidebar a{
+    transition: transform 0.3s ease-in-out;
 }
 
+.sidebar a:hover{
+    transform: translate(30px);
+    font-weight: bold;
+}
 
 main{
     background-color: rgb(255, 255, 255);
@@ -65,6 +72,7 @@ main{
     width: 90vw;
     opacity: 0.9;
     flex: 111;
+
 }
 
 footer{
@@ -79,5 +87,6 @@ footer{
     font-style: italic;
     color: beige;
     opacity: 0.5;
+    
 
 }
