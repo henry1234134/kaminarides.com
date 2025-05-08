@@ -8,8 +8,7 @@ body{
 
 nav {
     font-size: xx-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
+    font-family: 'palatino';
     height: 10vh;
     width:100vw;
     opacity: 80%;
@@ -31,10 +30,10 @@ nav {
     width: 7vw;
     transition: width 0.3s ease-in-out;
     opacity: 0.8;
-    
     flex-direction: column; /*ensures text goes downwards*/
     align-items: left;
 
+    
     /*background-color: aqua;*/
 
 }
@@ -58,15 +57,18 @@ nav {
 
 .sidebar a{
     transition: transform 0.3s ease-in-out;
+    
 }
 
 .sidebar a:hover{
     transform: translate(30px);
-    font-weight: bold;
+    /*font-weight: bold;*/
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.101) 1%, rgba(255, 255, 255, 0.708) 99%);
+    filter: invert();
 }
 
 main{
-    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);*/
     /*background-color: pink;*/
 
     width: 90vw;
@@ -76,7 +78,7 @@ main{
 }
 
 footer{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     bottom: 0;
     left: 0;
     height: 5vh;
@@ -86,7 +88,20 @@ footer{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
     color: beige;
-    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
     
 
 }
+
+#arrow{
+    width: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar:hover > #arrow {
+    transform: rotate(-90deg);
+
+
+}
+
