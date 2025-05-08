@@ -27,13 +27,14 @@ nav {
     top: 0;
     height: 90vh;
     width: 10vw;
-    opacity: 80%;
+    opacity: 0.8;
     transition: width 0.3s ease-in;
 
 }
 
 .sidebar:hover{ /* Good for PC but not good for mobile */
     width: 20vw;
+    background: linear-gradient(to left, white 40%, rgb(107, 89, 71, 0.1) 99%);
     
 }
 
@@ -42,8 +43,16 @@ nav {
 
 }
 
+.sidebar:focus-within{
+    width: 20vw;
+}
+
 .sidebar:hover ~ main {
-    filter: blur(3px)
+    filter: blur(3px) grayscale(100%) brightness(104%);
+}
+
+.sidebar:hover ~ nav {
+    filter: blur(3px);
 }
 
 
