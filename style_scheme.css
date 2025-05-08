@@ -37,6 +37,11 @@ nav {
     
 }
 
+.sidebar:focus{
+    width: 20vw;
+
+}
+
 .sidebar:hover ~ main {
     filter: blur(3px)
 }
