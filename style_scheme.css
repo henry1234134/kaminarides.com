@@ -4,6 +4,7 @@ div{
 
 body{
     background-color: rgb(255, 255, 255);
+
 }
 
 nav {
@@ -11,7 +12,7 @@ nav {
     font-family: 'palatino';
     height: 10vh;
     width:100vw;
-    opacity: 80%;
+    opacity: 0.8;
     top: 0;
     left: 0;
     flex:0;
@@ -32,7 +33,6 @@ nav {
     opacity: 0.8;
     flex-direction: column; /*ensures text goes downwards*/
     align-items: left;
-
     
     /*background-color: aqua;*/
 
@@ -63,7 +63,7 @@ nav {
 .sidebar a:hover{
     transform: translate(30px);
     /*font-weight: bold;*/
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.101) 1%, rgba(255, 255, 255, 0.708) 99%);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.101) 60%, rgba(255, 255, 255, 0.583) 99%);
     filter: invert();
 }
 
@@ -74,6 +74,7 @@ main{
     width: 90vw;
     opacity: 0.9;
     flex: 111;
+    
 
 }
 
