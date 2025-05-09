@@ -74,8 +74,7 @@ nav {
 }
 
 .sidebar a:hover{
-    transform: translate(30px);
-    text-decoration: line-through;
+    transform: translate(60px) scale(1.5);
 
     /*font-weight: bold;*/
     /*background: linear-gradient(to left, rgba(0, 0, 0, 0.101) 60%, rgba(255, 255, 255, 0.583) 99%);
