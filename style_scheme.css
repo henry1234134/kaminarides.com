@@ -64,7 +64,13 @@ nav {
 .sidebar a{
     transition: transform 0.5s ease-in-out;
     padding-top: 10px;
+    color: black;
+    text-decoration: none;
     
+}
+
+.sidebar a:visited{
+    text-decoration: line-through;
 }
 
 .sidebar a:hover{
