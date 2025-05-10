@@ -36,13 +36,15 @@ nav {
     font-weight: 400;
 
     /*background-color: aqua;*/
-    padding-right: 5px;
+    
     transition: padding-right 0.7s ease-in-out;
+    padding-right: 5px;
 
 
 }
 
 .sidebar:hover{ /* Good for PC but not good for mobile */
+    transition: padding-right 0.7s ease-in-out;
     padding-right: 100px;
     
     /*background: linear-gradient(to top, white 40%, rgb(107, 89, 71, 0.1) 99%);*/
