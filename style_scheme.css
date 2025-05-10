@@ -45,15 +45,15 @@ nav {
 
 .sidebar:hover{ /* Good for PC but not good for mobile */
     padding-right: 100px;
-    
     /*background: linear-gradient(to top, white 40%, rgb(107, 89, 71, 0.1) 99%);*/
-    
 }
 
 .sidebar:focus-within{ /* Better for mobile, no need to long hold */
     padding-right: 100px;
+}
 
-
+.sidebar:active{
+    padding-right: 100px;
 }
 
 .sidebar:hover ~ main {
@@ -112,6 +112,17 @@ footer{
     padding-left: 10px;
     
 
+}
+
+footer a{
+    height: inherit;
+    align-content: center;
+
+}
+footer a img{
+    align-content: center;
+    height: inherit;
+    
 }
 
 #arrow{
