@@ -36,7 +36,7 @@ nav {
     font-weight: 400;
 
     /*background-color: aqua;*/
-    
+
     transition: padding-right 0.7s ease-in-out;
     padding-right: 5px;
 
@@ -44,14 +44,13 @@ nav {
 }
 
 .sidebar:hover{ /* Good for PC but not good for mobile */
-    transition: padding-right 0.7s ease-in-out;
     padding-right: 100px;
     
     /*background: linear-gradient(to top, white 40%, rgb(107, 89, 71, 0.1) 99%);*/
     
 }
 
-.sidebar:active{ /* Better for mobile, no need to long hold */
+.sidebar:focus-within{ /* Better for mobile, no need to long hold */
     padding-right: 100px;
 
 
@@ -59,7 +58,7 @@ nav {
 
 .sidebar:hover ~ main {
     filter: blur(5px) grayscale(100%) brightness(104%);
-    transition: filter 1s ease-in-out;
+    transform: scaleX(0.95);
 }
 
 .sidebar a{
@@ -91,6 +90,8 @@ main{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 400;
     padding-left: 10px;
+    filter: blur(0px) grayscale(0%) brightness(0%);
+    transition: filter 1s ease-in-out, transform 1s ease-in-out;
 
 
 }
