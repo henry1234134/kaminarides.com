@@ -27,8 +27,7 @@ nav {
     left: 0;
     top: 0;
     height: 90vh;
-    width: 7vw;
-    transition: width 0.7s ease-in-out;
+    width: auto;
     opacity: 0.8;
     flex-direction: column; /*ensures text goes downwards*/
     align-items: left;
@@ -38,10 +37,14 @@ nav {
 
     /*background-color: aqua;*/
 
+    transition: padding-right 0.7s ease-in-out;
+
+
 }
 
 .sidebar:hover{ /* Good for PC but not good for mobile */
-    width: 15vw;
+    max-width: 15vw;
+    padding-right: 100px;
     
     /*background: linear-gradient(to top, white 40%, rgb(107, 89, 71, 0.1) 99%);*/
     
@@ -70,7 +73,7 @@ nav {
 }
 
 .sidebar a:hover{
-    transform: translate(60px) scale(1.5);
+    transform: translate(30px) scale(1.5);
 
 
 }
