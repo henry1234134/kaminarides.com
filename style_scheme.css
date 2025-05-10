@@ -4,7 +4,6 @@ div{
 
 body{
     background-color: rgb(255, 255, 255);
-
 }
 
 nav {
@@ -37,9 +36,6 @@ nav {
     font-size: 15px;
     font-weight: 400;
 
-
-    
-    
     /*background-color: aqua;*/
 
 }
@@ -76,9 +72,7 @@ nav {
 .sidebar a:hover{
     transform: translate(60px) scale(1.5);
 
-    /*font-weight: bold;*/
-    /*background: linear-gradient(to left, rgba(0, 0, 0, 0.101) 60%, rgba(255, 255, 255, 0.583) 99%);
-    filter: invert();*/
+
 }
 
 main{
