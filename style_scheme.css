@@ -36,7 +36,7 @@ nav {
     font-weight: 400;
 
     /*background-color: aqua;*/
-
+    padding-right: 5px;
     transition: padding-right 0.7s ease-in-out;
 
 
