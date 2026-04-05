@@ -1,61 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Kaminarides</title>
+        <title>Henry Kaminarides</title>
         <meta charset="utf-8">
-
         <link rel="icon" href="svg.svg">
-        <link rel="stylesheet" href="style_scheme.css">
-
-
-        <meta name="description" content="Henry Kaminarides Portfolio Website. Enjoy."> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Kaminarides.com">
-        <meta property="og:description" content="Portfolio Website. Enjoy.">
-        <meta property="og:url" content="https://www.kaminarides.com/">
-        <meta property="og:image" content="open_graph.jpeg">  
-
         
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style_scheme.css">
+        <script src="javascript.js" defer></script>
 
+        <meta name="description" content="Henry Kaminarides' personal page and blog."> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <nav>
-            <img src="svg.svg" alt="Kaminarides Logo"/>
-            <p>Kaminarides.com</p>
-            
-        </nav>
-        <div class="row">
-            <div class="sidebar">
-                <img id='arrow' src="arrow.svg" alt="arrow"/>
-                <a href="https://www.google.com">Home</a>
-                <a href="https://www.google.com">ServiceNow</a>
-                <a href="https://www.google.com">Cyber Security</a>
-                <a href="https://www.google.com">Data Science</a>
-                <a href="https://www.google.com">Projects</a>
-                <a href="https://www.google.com">Resources</a>
-                <a href="https://www.google.com">Contact</a>
-
-                
-                
-                
+        <nav class="minimal-nav">
+            <div class="nav-content">
+                <a href="#" class="logo">Henry.</a>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="cool-stuff.html">Cool Stuff</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
             </div>
-            <main>
-                <p></p>
-                Main body
-                <p> This is the main text area, this is where I can write my main content of the webpage.</p>
-                <p> If i could really be bothered to write something meaningful here I would, but I cba. </p>
+        </nav>
 
-                
-            </main>
-        </div>
+        <main>
+            <!-- Hero Section -->
+            <section class="hero reveal">
+                <div class="hero-content">
+                    <h1 class="hero-title">Just my personal corner of the internet.</h1>
+                    <p class="subtitle">Thoughts on life, random musings, and a bit of everything else.</p>
+                </div>
+            </section>
 
-       
+            <!-- Blog/Notes Section -->
+            <section id="blog" class="blog-section reveal">
+                <h2 class="section-heading">Recent Notes</h2>
+                <div class="blog-list">
+                    <article class="blog-item">
+                        <span class="blog-date">Oct 24, 2026</span>
+                        <div class="blog-info">
+                            <h3><a href="#">The Art of Doing Nothing</a></h3>
+                            <p>Sometimes the most productive thing you can do is absolutely nothing at all.</p>
+                        </div>
+                    </article>
+                    <article class="blog-item">
+                        <span class="blog-date">Sep 12, 2026</span>
+                        <div class="blog-info">
+                            <h3><a href="#">Why Monotone Design Works</a></h3>
+                            <p>Exploring visual minimalism and how stripping away color focuses the mind.</p>
+                        </div>
+                    </article>
+                    <article class="blog-item">
+                        <span class="blog-date">Aug 05, 2026</span>
+                        <div class="blog-info">
+                            <h3><a href="#">A Weekend in the City</a></h3>
+                            <p>Observations from a quiet weekend spent observing the urban landscape.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact" class="minimal-footer reveal">
+            <div class="footer-content">
+                <p>&copy; 2026 Henry Kaminarides.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/henry-jk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/henry1234134" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </footer>
     </body>
-
-    <footer>
-        <p> Author: Henry Kaminarides </p>
-        <a href="https://www.linkedin.com/in/henry-jk/"><img src="https://www.linkedin.co.uk/favicon.ico"></a>
-        <a href="https://github.com/henry1234134"><img src="https://www.github.com/favicon.ico"></a>
-    </footer>
 </html>
