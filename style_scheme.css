@@ -292,3 +292,69 @@ main {
     padding-top: 0.5rem;
     border-top: 1px solid var(--border-color);
 }
+
+/* Minimal UI Cursor & HUD */
+.cool-stuff-body {
+    cursor: none;
+}
+
+.cool-stuff-body a {
+    cursor: none;
+}
+
+.custom-cursor {
+    width: 6px;
+    height: 6px;
+    background-color: var(--text-primary);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.15s escape, height 0.15s ease, background-color 0.15s ease;
+}
+
+.custom-cursor.active {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid var(--text-primary);
+}
+
+#controls-overlay {
+    transition: opacity 1.5s ease-out;
+}
+
+.hud-hidden {
+    opacity: 0 !important;
+}
+
+#canvas-container {
+    cursor: none;
+}
+
+/* Custom Cursor Idle State */
+.custom-cursor {
+    width: 6px;
+    height: 6px;
+    background-color: var(--text-primary);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.15s ease, height 0.15s ease, background-color 0.15s ease, opacity 0.5s ease;
+    opacity: 1;
+}
+
+.custom-cursor.idle {
+    opacity: 0.3;
+}
+
+.custom-cursor.anchored {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid var(--text-primary);
+    opacity: 0.8;
+}

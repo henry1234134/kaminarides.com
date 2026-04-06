@@ -16,10 +16,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
         <!-- GSAP for smooth animations -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        
+        <!-- Post Processing -->
+        <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+        <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+        <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+        <script src="https://unpkg.com/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+        
         <script src="cool-stuff.js" defer></script>
 
         <meta name="description" content="A minimalist 3D playground."> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     </head>
     <body class="no-scroll">
         <nav class="minimal-nav transparent-nav">
@@ -40,10 +47,10 @@
         <!-- Overlay Instructions -->
         <div id="controls-overlay">
             <div class="hud">
-                <p><strong>[SPACE]</strong> Spawn more</p>
-                <p><strong>[ARROWS]</strong> Rotate scene</p>
-                <p><strong>[MOUSE]</strong> Perspective shift</p>
-                <p class="counter">Objects: <span id="object-counter">0</span></p>
+                <p><strong>[DRAG]</strong> Look around</p>
+                <p><strong>[TAP/CLICK]</strong> Interact with shapes</p>
+                <p class="counter">Infinite Exploration</p>
+                <p>Found Rare: <span id="rare-counter">0</span></p>
             </div>
         </div>
     </body>
