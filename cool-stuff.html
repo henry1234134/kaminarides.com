@@ -27,6 +27,16 @@
 
         <meta name="description" content="A minimalist 3D playground."> 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <style>
+            #companion-emote {
+                position: absolute; pointer-events: none;
+                font-size: 2.5rem; text-align: center;
+                transform: translate(-50%, -100%);
+                opacity: 0; transition: opacity 0.3s;
+                filter: drop-shadow(0px 0px 8px rgba(255,255,255,0.9));
+                z-index: 1000;
+            }
+        </style>
     </head>
     <body class="no-scroll">
         <nav class="minimal-nav transparent-nav">
@@ -43,6 +53,7 @@
 
         <!-- 3D Canvas Container -->
         <div id="canvas-container"></div>
+        <div id="companion-emote">✨</div>
 
         <!-- Overlay Instructions -->
         <div id="controls-overlay">
